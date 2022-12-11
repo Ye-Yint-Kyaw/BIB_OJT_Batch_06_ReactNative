@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <Text>Original Array</Text>
       <Text>[Apple, Orange,Banana, Grape, Tomato]</Text>
+      <Text>Original Array</Text>
       <StatusBar style="auto" />
     </View>
   );
