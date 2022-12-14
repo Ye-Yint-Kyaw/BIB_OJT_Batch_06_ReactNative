@@ -13,12 +13,12 @@ export default function App() {
     <View style={styles.container}>
       <Text>Original Array</Text>
       <Text>{fruits}</Text>
-      <view>
+      <View>
         <Button
         title='CHANGE TO UPPER CASE'
         onPress = {() => setShow(upper_item)}
         />
-      </view>
+      </View>
       <Text>Upper Case Array</Text>
       <Text>{show}</Text>
       
