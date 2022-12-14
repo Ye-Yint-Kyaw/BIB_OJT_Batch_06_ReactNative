@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Alert, Button, StyleSheet, Text, TextInput, View } from 'react-native';
 
 export default function App() {
-  const fruits = ['Apple', 'Orange','Banana', 'Grape', 'Tomato'];
+  const fruits = ['Apple ', 'Orange ','Banana ', 'Grape ', 'Tomato '];
   const [show, setShow] = useState<string[]>([]);
   const upper_item = fruits.map(up => up.toUpperCase());
   const [value, onChangeText] = useState(''); 
