@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { StyleSheet, Text, View, TextInput, Button, TouchableHighlight, TouchableOpacity,FlatList, Alert} from 'react-native';
 
 export default function App() {
+  const [newitem, setNewitem] = useState<string[]>([])
   const [newdata, onChangeText] = useState('')
   const onPress = () => {
     data.push(newdata)
@@ -10,13 +11,14 @@ export default function App() {
   const Item = () => {
     return (
       <View style={styles.itemcontainer}>
-        <TouchableOpacity onPress={()=>Alert.alert('Clicked')}>
-           <Text style={styles.itemtext}>{data[1]}</Text>
+        <TouchableOpacity onPress={()=>Alert.alert(newitem.toString())}>
+           <Text style={styles.itemtext}>{newitem}</Text>
         </TouchableOpacity>
       </View>
     )
   }
   const data = ['Bruce Wayne' , 'Cassandra Cain' , 'Barbara Gordon']
+  setNewitem(data)
   const renderItem = () => {
     return (<Item/>)
   }
